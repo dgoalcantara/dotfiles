@@ -3,15 +3,11 @@ scriptencoding utf-8
 language en_US.utf-8
 
 if !has('nvim')
-    " Change cursor shapes based on whether we are in insert mode,
-    " see https://vi.stackexchange.com/questions/9131/i-cant-switch-to-cursor-in-insert-mode
     let &t_SI = "\<esc>[6 q"
     let &t_EI = "\<esc>[2 q"
     if exists('&t_SR')
         let &t_SR = "\<esc>[4 q"
     endif
-
-    " The number of color to use
     set t_Co=256
 endif
 
